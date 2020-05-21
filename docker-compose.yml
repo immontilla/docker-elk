@@ -61,11 +61,11 @@ services:
       - "5601:5601"
     depends_on:
       - elasticsearch
-# If ucd-difc network not exits, create it running 'docker network create -d bridge ucd-difc'
+# If ucd-difc network not exists, create it running 'docker network create -d bridge ucd-difc-network'
 networks:
   default:
     external: 
-      name: ucd-difc
+      name: ucd-difc-network
 
 volumes:
   elasticsearch:
